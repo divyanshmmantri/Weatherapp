@@ -4,6 +4,7 @@ const hbs=require('hbs')
 const app=express()
 const geocode=require('./utils/geocode')
 const weather_forecast=require('./utils/weather_forecast')
+const port=process.env.PORT || 3000
 // for paths
 const pathd=path.join(__dirname,'../public')
 const path2=path.join(__dirname,'../temp')
