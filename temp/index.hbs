@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <title>Weather</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-6 mx-auto">
+        <div class="card  my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Know your place weather conditions</h5>
+            <form id="weatherform">           
+                
+                <input type="text"  class="loc" placeholder="Enter Location" style="width: 60%;" required><br><br>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" >KNOW YOUR WEATHER</button>
+              
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>footer}}
+  <h2 style="text-align: center;" id="textloc"></h2>
+  <script src="/js/app.js"></script> 
+</body>
+</html>
