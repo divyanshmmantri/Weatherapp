@@ -84,6 +84,6 @@ app.get('/weather',(req,res)=>{
 app.get('*',(req,res)=>{
     res.send('page not found')
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server is set ')
 })
